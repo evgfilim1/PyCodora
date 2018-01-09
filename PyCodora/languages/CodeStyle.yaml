@@ -1,0 +1,54 @@
+# Syntax
+'c++':
+    module: "#include <{{lib}}>"
+    function: "\n{{type}} {{name}}({{args}}) {{'{'}}\n{{body}}\n{{'}'}}\n"
+    function_call: "{{name}}({{args}});"
+    function_call_inline: "{{name}}({{args}})"
+    comment: "// {{text}}"
+    multiline_comment: "/* {{text}} */"
+    condition: "if ({{condition}}) {{'{'}}\n{{body}}\n{{'}'}}"
+    full_condition: "if ({{condition}}) {{'{'}}\n{{body_true}}\n{{'}'}} else {{'{'}}\n{{body_false}}\n{{'}'}}"
+    # docstring_top: "/** {{line}}"
+    # docstring_body: " * {{line}}"
+    # docstring_bottom: " */"
+    return: "return {{value}};"
+    arg: "{{type}} {{name}}"
+    arg_default: "{{type}} {{name}}={{default}}"
+python:
+    module: "import {{lib}}"
+    function: "\ndef {{name}}({{args}}) -> {{type}}:\n{{body}}\n"
+    function_call: "{{name}}({{args}})"
+    function_call_inline: "{{name}}({{args}})"
+    comment: "# {{text}}"
+    multiline_comment: "\"\"\"{{text}}\"\"\""
+    condition: "if {{condition}}:\n{{body}}"
+    full_condition: "if {{condition}}:\n{{body_true}}\nelse:\n{{body_false}}"
+    # docstring_top: "\"\"\"{{line}}"
+    # docstring_body: "\n{{line}}"
+    # docstring_bottom: "\"\"\""
+    return: "return {{value}}"
+    arg: "{{name}}: {{type}}"
+    arg_default: "{{name}}: {{type}} = {{default}}"
+---
+# Conditions
+default:
+    eq: "{0} == {1}"
+    lt: "{0} < {1}"
+    gt: "{0} > {1}"
+    ge: "{0} >= {1}"
+    le: "{0} <= {1}"
+    ne: "{0} != {1}"
+---
+# Snippets
+'c++':
+    print: "std::cout << {0};"
+    print_arg_sep: " << "
+    print_newline: "std::cout << {0} << std::endl;"
+    print_no_newline: "std::cout {0};"
+python:
+    print: "print({0})"
+    print_arg_sep: ", "
+    print_newline: "print({0})"
+    print_no_newline: "print({0}, end='')"
+    ifmain: "\nif __name__ == '__main__':\n    main()\n"
+    ifmain_return: "\nif __name__ == '__main__':\n    sys.exit(main())\n"
