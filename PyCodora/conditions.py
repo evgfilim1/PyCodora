@@ -1,3 +1,7 @@
+# PyCodora
+# Copyright © 2018 Evgeniy Filimonov <evgfilim1 (at) gmail (dot) com>
+# See full NOTICE at http://github.com/evgfilim1/PyCodora
+
 from .base import PyCodoraBase, BaseCodeBlock
 from .languages import CONDITIONS, SYNTAX
 from typing import Any, Callable, Optional

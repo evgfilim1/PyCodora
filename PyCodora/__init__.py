@@ -1,3 +1,7 @@
+# PyCodora
+# Copyright © 2018 Evgeniy Filimonov <evgfilim1 (at) gmail (dot) com>
+# See full NOTICE at http://github.com/evgfilim1/PyCodora
+
 from .conditions import EqualityCondition, InequalityCondition
 from .helpers import Argument, FunctionCall
 from .languages import supported_languages

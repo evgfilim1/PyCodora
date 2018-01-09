@@ -1,3 +1,7 @@
+# PyCodora
+# Copyright © 2018 Evgeniy Filimonov <evgfilim1 (at) gmail (dot) com>
+# See full NOTICE at http://github.com/evgfilim1/PyCodora
+
 from PyCodora import CodeGenerator, Argument, FunctionCall, EqualityCondition, InequalityCondition, Snippets
 
 

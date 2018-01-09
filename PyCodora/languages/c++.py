@@ -1,3 +1,7 @@
+# PyCodora
+# Copyright © 2018 Evgeniy Filimonov <evgfilim1 (at) gmail (dot) com>
+# See full NOTICE at http://github.com/evgfilim1/PyCodora
+
 from ..base import BaseCodeBlock, BaseGenerator, BaseSnippets
 from ..helpers import method_not_supported
 

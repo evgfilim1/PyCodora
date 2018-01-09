@@ -1,5 +1,5 @@
 # PyCodora — Python Simple Code Generator
-[![license](https://img.shields.io/github/license/evgfilim1/PyCodora.svg)](LICENSE)
+[![license](https://img.shields.io/github/license/evgfilim1/PyCodora.svg)](https://tldrlegal.com/license/gnu-lesser-general-public-license-v3-(lgpl-3))
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/5c551685e55a4852829dfd666303889c)](https://www.codacy.com/app/evgfilim1/PyCodora)
 [![Requirements Status](https://requires.io/github/evgfilim1/PyCodora/requirements.svg)](https://requires.io/github/evgfilim1/PyCodora/requirements/)
 
